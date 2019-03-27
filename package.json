@@ -1,0 +1,23 @@
+{
+  "name": "plan-b",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backup": "node index.js "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.429.0",
+    "dotenv-safe": "^6.1.0",
+    "mv": "^2.1.1",
+    "node-fetch": "^2.3.0",
+    "parse-link-header": "^1.0.1",
+    "superagent": "^4.1.0"
+  },
+  "devDependencies": {
+    "prettier": "1.16.4"
+  }
+}
