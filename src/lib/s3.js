@@ -36,8 +36,7 @@ const uploadFile = async fileName => {
     const s3Data = await s3Upload(params);
 
     if (s3Data && s3Data.Location) {
-        console.log(`File uploaded successfully at ${s3Data.Location}`);
-        return;
+        return `File uploaded successfully at ${s3Data.Location}`;
     }
 
     return s3Data;
