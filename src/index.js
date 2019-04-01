@@ -2,6 +2,9 @@ const isMaster = require('./lib/isMaster').isMaster;
 const handleBackup = require('./handleBackup').handleBackup;
 
 const backupRepo = async (req, res) => {
+    if (!req || !req.body) {
+        throw new Error('no request sent');
+    }
     const body = req.body;
 
     if (!isMaster(body)) {
