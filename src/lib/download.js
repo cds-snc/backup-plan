@@ -5,7 +5,7 @@ const mv = require('mv');
 const ext = '.zip';
 
 const move = (src, repoName, zipFileName) => {
-    const outputDir = `./backup/`;
+    const outputDir = `/tmp/backup/`;
     mv(
         src,
         `${outputDir}/${repoName}-${zipFileName}${ext}`,
@@ -24,7 +24,7 @@ const move = (src, repoName, zipFileName) => {
 const downloadZip = async repoName => {
     const zipFileName = 'master';
     const href = `https://github.com/cds-snc/${repoName}/archive/${zipFileName}${ext}`;
-    const src = `./${zipFileName}-${repoName}${ext}`;
+    const src = `/tmp/${zipFileName}-${repoName}${ext}`;
 
     request
         .get(href)
