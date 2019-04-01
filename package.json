@@ -11,12 +11,12 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "aws-sdk": "^2.429.0",
+    "aws-sdk": "^2.432.0",
     "dotenv-safe": "^6.1.0",
     "mv": "^2.1.1",
     "node-fetch": "^2.3.0",
     "parse-link-header": "^1.0.1",
-    "superagent": "^4.1.0"
+    "superagent": "^5.0.2"
   },
   "devDependencies": {
     "body-parser": "^1.18.3",
