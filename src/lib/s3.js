@@ -1,3 +1,5 @@
+require('dotenv-safe').config({ allowEmptyValues: true });
+
 const AWS = require('aws-sdk');
 const fs = require('fs');
 const util = require('util');
