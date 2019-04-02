@@ -21,7 +21,7 @@ async function asyncForEach(array, callback) {
 
         // upload the repos to s3
         await asyncForEach(repos, async name => {
-            const result = await uploadFile(`/tmp/backup/${name}-master.zip`);
+            const result = await uploadFile(`${name}-master.zip`, name);
             console.log(result);
         });
     } catch (e) {

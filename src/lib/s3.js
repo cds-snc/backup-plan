@@ -11,6 +11,7 @@ const s3 = new AWS.S3({
 });
 
 const bucketName = 'cds-github';
+const baseDir = process.env.BASE_DIR;
 
 const s3Upload = params => {
     return new Promise((resolve, reject) => {
@@ -24,12 +25,12 @@ const s3Upload = params => {
     });
 };
 
-const uploadFile = async fileName => {
-    const data = await readFile(fileName);
+const uploadFile = async (file, name) => {
+    const data = await readFile(`${baseDir}/${file}`);
 
     const params = {
         Bucket: bucketName,
-        Key: fileName,
+        Key: name,
         Body: data
     };
 

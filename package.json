@@ -1,27 +1,25 @@
 {
-  "name": "plan-b",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "jest",
-    "backup": "node src/backupAll.js",
-    "dev": "node src/server.js"
-  },
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "aws-sdk": "^2.432.0",
-    "dotenv-safe": "^6.1.0",
-    "mv": "^2.1.1",
-    "node-fetch": "^2.3.0",
-    "parse-link-header": "^1.0.1",
-    "superagent": "^5.0.2"
-  },
-  "devDependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "jest": "^24.5.0",
-    "prettier": "1.16.4"
-  }
+    "name": "plan-b",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "jest",
+        "backup": "node src/backupAll.js",
+        "dev": "node src/server.js"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "aws-sdk": "^2.433.0",
+        "dotenv-safe": "^6.1.0",
+        "node-fetch": "^2.3.0",
+        "superagent": "^5.0.2"
+    },
+    "devDependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.4",
+        "jest": "^24.6.0",
+        "prettier": "1.16.4"
+    }
 }
