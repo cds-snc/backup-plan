@@ -2,7 +2,7 @@
 const request = require('superagent');
 const fs = require('fs');
 const ext = '.zip';
-const baseDir = process.env.BASE_DIR;
+const baseDir = process.env.BASE_DIR || '/tmp';
 
 const downloadZip = async repoName => {
     return new Promise((resolve, reject) => {

@@ -11,7 +11,7 @@ const s3 = new AWS.S3({
 });
 
 const bucketName = 'cds-github';
-const baseDir = process.env.BASE_DIR;
+const baseDir = process.env.BASE_DIR || '/tmp';
 
 const s3Upload = params => {
     return new Promise((resolve, reject) => {
