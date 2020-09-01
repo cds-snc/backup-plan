@@ -14,7 +14,7 @@
         "aws-sdk": "^2.433.0",
         "dotenv-safe": "^6.1.0",
         "node-fetch": "^2.3.0",
-        "superagent": "^5.0.2"
+        "superagent": "^6.0.0"
     },
     "devDependencies": {
         "body-parser": "^1.18.3",
